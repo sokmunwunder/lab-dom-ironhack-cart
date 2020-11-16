@@ -6,10 +6,10 @@ function updateSubtotal(product) {
   const quantity = product.querySelector('.quantity .units');
   const price.innerHTML = actualPrice;
   const quantity.innerHTML = actualQuantity;
-  const value= actualPrice*actualQuantity;
-  const subTotal = product.querySelector('.subtotal');
-  const newSubTotal= subTotal.innerHTML;
-  return newSubTotal;
+  const actualSubTotal= actualPrice*actualQuantity;
+  const SubTotalElement = product.querySelector('.subtotal');
+  SubTotalElement.innerHTML= actualSubTotal;
+  return SubTotal;
 
   //... your code goes here
 }
