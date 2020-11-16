@@ -3,12 +3,19 @@
 function updateSubtotal(product) {
   console.log('Calculating subtotal, yey!');
   const price = product.querySelector('.price span');
-  const quantity = product.querySelector('.quantity input');
-  
-  //return price*quantity
+  const quantity = product.querySelector('.quantity .units');
+  const price.innerHTML = actualPrice;
+  const quantity.innerHTML = actualQuantity;
+  const value= actualPrice*actualQuantity;
+  const subTotal = product.querySelector('.subtotal');
+  const newSubTotal= subTotal.innerHTML;
+  return newSubTotal;
 
   //... your code goes here
 }
+updateSubtotal();
+
+
 
 function calculateAll() {
   // code in the following two lines is added just for testing purposes.
