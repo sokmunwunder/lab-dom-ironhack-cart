@@ -36,9 +36,10 @@ function calculateAll() {
 const productElements = document.getElementsByClassName('product');
 //const priceFirstProduct = product.getElementsByClassName('.product .firstPrice');
 //const priceSecondProduct =product.getElementsByClassName('.product .secondPrice');
-for(let i=0, i<=productElements.length, i++){
-  const totalValue = 0 += updateSubtotal(productElements[i]);
+for (let x=0; x <=productElements.length; x++){
+  const totalValue = 0 += updateSubtotal(productElements[x]);
 }
+console.dir();
 return totalValue;
 }
   // ITERATION 3
