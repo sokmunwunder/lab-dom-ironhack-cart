@@ -7,15 +7,12 @@ function updateSubtotal(product) {
   const price.innerHTML = actualPrice;
   const quantity.innerHTML = actualQuantity;
   const actualSubTotal= actualPrice*actualQuantity;
-  const SubTotalElement = product.querySelector('.subtotal');
+  const SubTotalElement = product.querySelector('.subtotal span');
   SubTotalElement.innerHTML= actualSubTotal;
-  return SubTotal;
+  return actualSubTotal;
 
   //... your code goes here
 }
-updateSubtotal();
-
-
 
 function calculateAll() {
   // code in the following two lines is added just for testing purposes.
