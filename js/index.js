@@ -31,9 +31,15 @@ function updateSubtotal(product) {
   // ITERATION 2
   //... your code goes here
 function calculateAll() {
-const singleProduct = document.querySelector('.product');
-updateSubtotal(singleProduct);
-
+//const singleProduct = document.querySelector('.product');
+//updateSubtotal(singleProduct);
+const productElements = document.getElementsByClassName('product');
+//const priceFirstProduct = product.getElementsByClassName('.product .firstPrice');
+//const priceSecondProduct =product.getElementsByClassName('.product .secondPrice');
+for(let i=0, i<=productElements.length, i++){
+  const totalValue = 0 += updateSubtotal(productElements[i]);
+}
+return totalValue;
 }
   // ITERATION 3
   //... your code goes here
